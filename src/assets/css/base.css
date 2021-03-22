@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	color: black;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+header {
+    background: black;
+    color: white;
+    height: 80px;
+}
+header a {
+    color: white;
+}
+#logo{
+	float:left;
+	margin-right: 10px;
+    margin-top: 10px;
+}
+#logo:hover {
+	color: #0b76a6;
+}
+#logo .site {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}	
+nav{
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+.cart{
+    width: 30px;
+    height: 40px;
+}
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background: #0b76a6;
+}
+.slider-container {
+        transition: 450ms -webkit-transform;
+        transition: 450ms transform;
+        transition: 450ms transform, 450ms -webkit-transform;
+        font-size: 0;
+        white-space: nowrap;
+        margin: 10px 0px;
+}
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	inline-size: block;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+    margin: 10px;
+	width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.slider img:hover{
+    opacity: 0.3; 
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
